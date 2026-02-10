@@ -164,9 +164,3 @@ See: [`docs/architecture.md`](docs/architecture.md)
 
 ---
 
-## 11) Interview talking points
-
-- How to calibrate thresholds by portfolio segment (rural/urban, product type).
-- How to convert model output into action policy (step-up auth / manual review / reject).
-- How to manage model risk: explainability, drift triggers, retraining SLAs, rollback plan.
-- How to align fraud and credit pipelines into a single risk intelligence fabric.
