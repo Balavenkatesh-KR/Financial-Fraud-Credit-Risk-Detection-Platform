@@ -1,0 +1,19 @@
+seed: 42
+label_columns:
+  fraud: is_fraud
+  credit: default
+splits:
+  test_size: 0.2
+  val_size: 0.2
+metrics:
+  fn_cost: 10.0
+  fp_cost: 1.0
+threshold_search:
+  min: 0.05
+  max: 0.95
+  step: 0.01
+mlflow:
+  experiment_name: unified-financial-risk-intelligence
+artifacts:
+  model_dir: artifacts/models
+  report_dir: artifacts/reports
