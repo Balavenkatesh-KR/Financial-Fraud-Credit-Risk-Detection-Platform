@@ -2,7 +2,7 @@
 
 Production-grade ML platform for Indian banks / NBFCs covering fraud detection, credit risk scoring, early warning signals, explainability, and API serving.
 
-## Why this project is interview-ready (20–25 LPA role standard)
+## 
 
 - End-to-end modular architecture (data -> features -> models -> explainability -> API -> MLOps).
 - Real public datasets (Kaggle competitions/datasets) instead of toy synthetic-only samples.
