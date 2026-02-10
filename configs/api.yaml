@@ -1,0 +1,8 @@
+service:
+  name: Unified Financial Risk Intelligence API
+  version: 0.1.0
+model_paths:
+  fraud: artifacts/models/fraud_pipeline.joblib
+  credit: artifacts/models/credit_pipeline.joblib
+explainability:
+  top_features: 3

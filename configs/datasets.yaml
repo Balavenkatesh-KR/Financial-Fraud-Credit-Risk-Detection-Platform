@@ -1,0 +1,49 @@
+datasets:
+  credit:
+    home_credit:
+      source: kaggle
+      competition: home-credit-default-risk
+      files:
+        - application_train.csv
+      indian_mapping: |
+        Maps to Indian NBFC retail lending because it includes bureau behavior,
+        installment history, and borrower demographics similar to bureau +
+        banking statement underwriting used in India.
+    give_me_some_credit:
+      source: kaggle
+      dataset: c/GiveMeSomeCredit
+      files:
+        - cs-training.csv
+      indian_mapping: |
+        Captures repayment delinquency and utilization patterns aligned with
+        unsecured personal loans and credit-card linked EMI behavior.
+  fraud:
+    ieee_cis:
+      source: kaggle
+      competition: ieee-fraud-detection
+      files:
+        - train_transaction.csv
+        - train_identity.csv
+      indian_mapping: |
+        Device, identity and transaction-level signals map well to UPI/card-not-present
+        fraud controls for merchant and payer risk scoring.
+    credit_card_fraud:
+      source: kaggle
+      dataset: mlg-ulb/creditcardfraud
+      files:
+        - creditcard.csv
+      indian_mapping: |
+        Highly imbalanced fraud labels simulate real payment fraud prevalence.
+
+feature_assumptions:
+  upi_context_features:
+    - upi_hour_velocity_1h
+    - upi_day_velocity_24h
+    - merchant_risk_score
+    - geo_distance_km
+    - device_fingerprint_change
+  credit_context_features:
+    - income_to_emi_ratio
+    - utilization_ratio
+    - delinquency_trend_90d
+    - bureau_enquiry_count_30d
